@@ -13,8 +13,8 @@
 				<ul>
 					<li>[EDT August 2016 Release](mjcorless.github.io/resources/pdf/EDT2016AugustRelease.pdf)</li>
 					<li>[EDT June 2017 Release](mjcorless.github.io/resources/pdf/EDT2017JuneRelease.pdf)</li>
-					<li>Unfortunately I did not get permission to show releases for VCM. However, here are some of the features I added:</li>
-					<ul>
+					<li><a href="#" onclick='showVCRDropDown();'>Unfortunately I did not get permission to show releases for VCM. However, here are some of the features I added:</a></li>
+					<ul ID="VCRDropDown" style="display:none">
 						<li>User guides for each of the VCM modules...</li>
 						<li>Multi-View html component that shows a location dropdown for users with specific roles to change the location property of a Viper Change Request's name.
 							Users without the role would just see an uneditable label that included the location in the VCR name.</li>
@@ -43,8 +43,17 @@
 						<li>Personal Portfolio website that includes links to various work I have done.</li>
 						<li>Languages/Frameworks: HTML, CSS, Javascript, markdown</li>
 					</ul>
-		</div>
-	
-	
+		</div>	
 </body>
+<script>
+	function showVCRDropDown()
+	{
+	alert("hello");
+		document.getElementById("VCRDropDown").style.display = 'block';
+		
+	}
+</script>
 </html>
+
+
+
