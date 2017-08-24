@@ -9,13 +9,13 @@
 
     <div class="page">
 	<!-- About Me -->
-        <div class="header clearfix">
-            <div class="header-name">
+        <div class="container">
+            <div class="">
                 <h1>Matthew Corless</h1>
                 <h2>Developer and Student</h2>
             </div>
-            <div class="contact-container">
-                <div class="header-contact contact1">
+            <div class="">
+                <div class="header-contact">
                     <ul>
                         <li>850 E. Ocean Blvd, #1204, Long Beaach, CA</li>
                         <li><a href="mailto:mjcorless@asu.edu">mjcorless@asu.edu</a></li>
@@ -23,7 +23,7 @@
 						<li><a href="https://github.com/mjcorless">Github Profile</a></li>
                     </ul>
                 </div>
-                <div class="header-contact contact2">
+                <div class="header-contact">
                     <ul>
                         <li><a href="https://mjcorless.github.io">Visit My Website for links to release documents for what I have done professionally and links to my own personal projects.</a></li>
                     </ul>
@@ -32,118 +32,129 @@
         </div>
 		
 		<!-- Experience -->
-        <div class="article">
-            <div class="section clearfix">
-                <div class="column-left"><h2>Professional Experience</h2></div>
-                <div class="column-right">
-                    <div class="section-label">
-                        <h2>Lockheed Martin Aeronautics<span class="subtitle">College Student Tech Spec</span></h2>
-                        <p class="date">May 2017 - November 2017 (1000 hr co-op)</p>
-                    </div>
-                    <ul>
-						<li>Worked front-end and back-end development for Engineering Document Tracker (EDT) and Viper Change Management (VCM) Websites</li>
-						<li>Worked various bugs and tasks on TFS including: generating Word, PDF, Excel, and RDLC reports, adding new features such as bulk profile processing and multiple assignment, and general bug-fixing.</li>
+        <div class="container">
+            <div class="column-left"><h2>Professional Experience</h2></div>
+            <div class="column-right">
+                <div class="section-label">
+                    <h2>Lockheed Martin Aeronautics<span class="position">College Student Tech Spec</span></h2>
+                     <p class="date">May 2016 - August 2016, May 2017 - November 2017</p>
+                </div>
+                <ul>Teams I have worked on:
+					<li>Engineering Drawing Tracker Website (May 2016 - August 2016, May 2017 - August 2017)</li>
+					<ul>
+						<li>Release notes of user affecting changes <small>(I wrote all of the code and was responsible for testing each of these changes. They were code reviewed by one or two senior developers before being committed to production)</small>:<a href="https://mjcorless.github.io/resources/pdf/EDT2016.pdf">2016</a>
+					&nbsp;&nbsp;<a href="https://mjcorless.github.io/resources/pdf/EDT2017June.pdf">June 2017</a>&nbsp;&nbsp;<a href="https://mjcorless.github.io/resources/pdf/EDT2017August.pdf">August 2017</a></li>
+						<li>Worked various bugs and tasks on TFS including: generating Word, PDF, and Excel reports, adding new features such as bulk profile processing, and general bug-fixing.</li>
 						<li>Languages/Frameworks: C#, ASP.NET, CSS, HTML, Javascript, SQL (and T-SQL), JQuery, BootStrap</li>
 						<li>Tools used: Microsoft SQL Server Management, Team Foundation Server, Visual Studios</li>
-						<li>Release notes of work I did for EDT <small>(changes I did not implement, VCM changes, and chore commits are excluded)</small>: <a href="https://mjcorless.github.io/resources/pdf/EDT2016AugustRelease.pdf">2016 EDT Release</a>
-						&nbsp;&nbsp;<a href="https://mjcorless.github.io/resources/pdf/EDT2017JuneRelease.pdf">2017 June EDT Release</a></li>
-							<ul>Examples of work:
-								<li>Added front-end and back-end logic to allow users to advance, challenge, and reject drawings assigned to them
-										in bulk instead of having to perform actions on each individual drawing. This utilized javascript for client side logic on which profiles could
-										be selected together, server side logic to perform the bulk processing (profile status change, bulk emailling, etc)</li>
-								<li>Created History database table and C# classes that would track every change a user made to a profile in one session 
-										and would save the changes in a compact JSON string. Created webcontrol to display every change in a profile since its creation, 
-										the user that committed the change, and the date of the change</li>
-							</ul>
-					</ul>
-                    <div class="section-label">
-                        <h2>Lockheed Martin Aeronautics<span class="subtitle">College Student Tech Spec</span></h2>
-                        <p class="date">May 2016 - August 2016</p>
-                    </div>
-                    <ul>
-						<li>Worked front-end and back-end development for Engineering Document Tracker (EDT) Website</li>
-						<li>Added various features and bug fixes to the EDT website based on their priority on TFS.</li>
-						<ul>This included:
-								<li>Added an excel report and the capabiltiy for managers to assign a worker and peer reviewer simultaneously.</li>
-								<li>Fixed various bugs in budget tracking and email logic.</li>
+						<ul>Examples of work:
+							<li>Added front-end and back-end logic to allow users to advance, challenge, and reject drawings assigned to them
+									in bulk instead of having to perform actions on each individual drawing. This utilized javascript for client side logic on which profiles could
+									be selected together, server side logic to perform the bulk processing (profile status change, bulk emailling, etc). I was able to multi-thread 
+									these processes so that it could operate 3-4 times faster (on my devolopment environment) but I switched teams before it was tested enough to be put in production.</li>
+							<li>Created History database table and supporting C# classes that would track every change a user made to a profile in one session 
+									and would save the changes in a compact JSON string. Created a webcontrol to display every change in a profile since its creation, 
+									the user that committed the change, and the date of the change</li>
 						</ul>
-					</ul>                  
-                </div>
+					</ul>
+					<li>Viper Change Management Website(May 2016 - August 2016, May 2017 - August 2017)</li>
+					<ul>
+						<li>Created in depth user guides for each VCM process (VCR, Airworthiness, FOSTR, CSI, Flight Forms)</li>
+						<li>Tested various changes by two senior developers before each VCM release.</li>
+						<li>Created a new user input for VCRs and an RDLC report that would display each VCR with 'yes' selected.</li>
+						<li>Created a new multi-view that would display a dropdown to users with specific roles to change the location of a VCR, therefore changing the VCR name. 
+							Users without the specific permissions would see the name of the VCR as a non-editable label.</li>
+						<li>Languages/Frameworks: C#, ASP.NET, SQL (and T-SQL), XML, CSS, HTML,</li>
+						<li>Tools used: Microsoft SQL Server Management, Team Foundation Server, Visual Studios</li>
+					</ul>					
+					<li>Automated Weight and Balance System(August 2017 - November 2017)</li>
+					<ul>
+						<li>In this team I was given more responsibility. I took online training for U.S. export laws in order to have access to production databases containing a variety 
+							of sensitive information (nothing requiring a security clearance). Responsible for entire development process (setting up my own enviroment, writing code, 
+							testing my own changes, and pushing those changes to production). 
+							<small>In previous teams I only wrote code, tested the changes, and committed to the main branch after a code review.</small></li>
+						<li>Created RESTful webservices/API to allow mobile client (using a local SQLite database) to communicate with server (SQL Server database).</li>
+						<li>Created entire SQL Server database, setting proper datatypes/lengths and triggers to mimick cascading delete for foreign keys. </li>
+						<li>Worked on various tasks and features for AWBS (U.S. military) and CAWBS (ally countries) websites.</li>					
+						<li>Languages/Frameworks: C#, .NET(primarily ASP.NET, some Xamarin), SQL (and T-SQL), CSS, HTML,</li>
+						<li>Tools used: Microsoft SQL Server Management, Team Foundation Server, Visual Studios, SQLite Browser, Virtual Machine for Test Server, Agile process</li>
+					</ul>	
+				</ul>                
             </div>
+        </div>
 			
-			<!-- Select Projects -->
-            <div class="section clearfix">
-                <div class="column-left"><h2>Select Projects</h2></div>
-                <div class="column-right">
-                    <h3>Converter<a href="https://github.com/mjcorless/Converter" class="project-link">(link)</a></h3>
-					<ul>
-						<li>Converter that takes the user's input and dynamically converts it to Decimal, Binary, Hexadecimal, and Octal.</li>
-						<li>Has a ShowMe! button that will then display each invidual conversion in HTML in a new window.</li>
-						<li>Languages/Frameworks: Java, CSS, HTML, Maven, Travis Continuous Integration, JavaFX, JUnit Testing</li>
-					</ul>
+		<!-- Select Projects -->
+        <div class="container">
+            <div class="column-left"><h2>Select Projects</h2></div>
+            <div class="column-right">
+                <h3>Converter<a href="https://github.com/mjcorless/Converter" class="project-link">(link)</a></h3>
+				<ul>
+					<li>Converter that takes the user's input and dynamically converts it to Decimal, Binary, Hexadecimal, and Octal.</li>
+					<li>Has a ShowMe! button that will then display each invidual conversion in HTML in a new window.</li>
+					<li>Languages/Frameworks/Tools: Java, CSS, HTML, Maven, Travis Continuous Integration, JavaFX, JUnit Testing</li>
+				</ul>
 
-                    <h3>mjcorless.github.io <a href="mjcorless.github.io" class="project-link">(link)</a></h3>
-                    <ul>
-						<li>Personal Portfolio website that includes links to various work I have done.</li>
-						<li>Languages/Frameworks: HTML, CSS, Javascript</li>
-					</ul>
-                </div>
+                <h3>mjcorless.github.io <a href="mjcorless.github.io" class="project-link">(link)</a></h3>
+                <ul>
+					<li>Personal Portfolio website that includes links to various work I have done.</li>
+					<li>Languages/Frameworks: HTML, CSS, Javascript</li>
+				</ul>
             </div>
+        </div>
 		
-			<!-- Skills -->
-			<div class="section clearfix">
-				<div class="column-left"><h2>Skills</h2></div>
-				<div class="column-right">
-					<table style="width:100%">
-						<tr>
-							<th>Skill</th>
-							<th>Proficient</th>
-							<th>Moderate</th>
-							<th>Diffident</th>
-						</tr>
-						<tr>
-							<td>Languages</td>
-							<td>C#, Java, CSS</td>
-							<td>Javascript, SQL, HTML</td>
-							<td>C++</td>
-						</tr>
-						<tr>
-							<td>Libraries/Frameworks</td>
-							<td>ASP.Net, JavaFX, JUnit, Swing</td>
-							<td>Bootstrap, JQuery</td>
-							<td>Xamarin, AngularJS</td>
-						</tr>
-						<tr>
-							<td>Tools</td>
-							<td>Git, TFS, Microsoft SQL Management Studio, Visual Studios, Eclipse, MS Office, MS Windows</td>
-							<td>UML, Mac OS X, Linux, Webstorm</td>
-							<td>Ant, Maven, IntelliJ</td>
-						</tr>
-						<tr>
-							<td>Methodologies</td>
-							<td>OOP, Agile</td>
-							<td>Waterfall, MVC</td>
-						</tr>
-					</table>
-				</div>            
-			</div>
+		<!-- Skills -->
+		<div class="container">
+			<div class="column-left"><h2>Skills</h2></div>
+			<div class="column-right">
+				<table style="width:100%">
+					<tr>
+						<th>Category</th>
+						<th>Proficient</th>
+						<th>Moderate</th>
+						<th>Diffident</th>
+					</tr>
+					<tr>
+						<td>Languages</td>
+						<td>C#, Java, CSS, HTML</td>
+						<td>Javascript, SQL</td>
+						<td>C++</td>
+					</tr>
+					<tr>
+						<td>Libraries/Frameworks</td>
+						<td>ASP.Net, JavaFX, JUnit, Swing</td>
+						<td>Bootstrap, JQuery</td>
+						<td>Xamarin, AngularJS</td>
+					</tr>
+					<tr>
+						<td>Tools</td>
+						<td>Git, TFS, Microsoft SQL Management Studio, Visual Studios, Eclipse, MS Office, MS Windows</td>
+						<td>UML, Mac OS X, Linux, Webstorm</td>
+						<td>Ant, Maven, IntelliJ</td>
+					</tr>
+					<tr>
+						<td>Methodologies</td>
+						<td>OOP, Agile</td>
+						<td>Waterfall, MVC</td>
+					</tr>
+				</table>
+			</div>            
+		</div>
 		
-			<!-- Education -->
-			<div class="section clearfix">
-				<div class="column-left"><h2>Education</h2></div>
-				<div class="column-right">
-					<div class="section-label">
-						<h1>Arizona State University</h1>
-						<p>B.S. Software Engineering Expected May 2018</p>
-					</div>
-					<ul>
-						<li>GPA: 3.6</li>
-						<li>Primary Focus: Web & Mobile Applications</li>
-						<li>Secondary Focus: Technological Entrepreneurship & Management</li>
-					</ul> 
-				</div>    
-			</div>
-		</div> 
+		<!-- Education -->
+		<div class="container">
+			<div class="column-left"><h2>Education</h2></div>
+			<div class="column-right">
+				<div class="section-label">
+					<h3>Arizona State University</h3>
+					<p>B.S. Software Engineering Expected May 2018</p>
+				</div>
+				<ul>
+					<li>GPA: 3.7</li>
+					<li>Primary Focus: Web & Mobile Applications</li>
+					<li>Secondary Focus: Technological Entrepreneurship & Management</li>
+				</ul> 
+			</div>    
+		</div>
 	</div>
 </body>
 </html>
