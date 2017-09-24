@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!-- Internet Explorer comments -->
+<!--[if lt IE 7]>     	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        	<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>       	<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>		<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Volton Free Responsive Template</title>
+        <title>Matthew Corless Portfolio Website</title>
         <meta name="description" content="">
         <!-- Orginal Template: Volton Template http://www.templatemo.com/tm-441-volton -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,8 +32,8 @@
                                 <img src="img/profile.jpg" alt="Volton">
                             </div>
                             <div class="profile-content">
-                                <h3 class="profile-title">Volton</h3>
-                                <p class="profile-description">Digital Photographer</p>
+                                <h3 class="profile-title">Matthew Corless</h3>
+								<p class="profile-description">Welcome to my portfolio website!</p>
                             </div>
                         </div>
                     </div>
@@ -43,7 +44,7 @@
                         <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
                         <li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
-						<li><a href="resume.html"><i class="fa fa-male"></i>My Resume</a></li>
+						<li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
                         <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                     </ul>
                 </div>
@@ -64,20 +65,20 @@
                     <li><a href="#top"><i class="fa fa-home"></i>Welcome</a></li>
                     <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
 					<li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
-                    <li><a href="resume.html"><i class="fa fa-male"></i>My Resume</a></li>
+                    <li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
-            <div class="social-icons">
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                </ul>
-            </div> <!-- .social-icons -->
+            <!-- <div class="social-icons"> -->
+                <!-- <ul> -->
+                    <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                <!-- </ul> -->
+            <!-- </div> <!-- .social-icons --> 
         </div> <!-- .sidebar-menu -->
         
 
@@ -102,9 +103,10 @@
 									<img src="img/8.jpg" alt="about me">
 								</div>
 								<div>
-									<p>My name is Matthew Corless. I am a senior at Arizona State University studying a B.S. in software engineering. I am currently a part-time software 
-									engineer ASC for Lockheed Martin. I interned for them for two consecutive summers before being brought on as a part-time hire while I finish my degree.</p>
-									</div>
+									<p>My name is Matthew Corless. I am a senior at Arizona State University studying a B.S. in software engineering. I am currently a part-time Software 
+										Engineer ASC for Lockheed Martin. I interned for them for two consecutive summers before being brought on as a part-time hire (30-40 hr/wk) while I finish my degree.
+									</p>
+								</div>
 								<hr>
 							</div>
 						</div> <!-- #about -->
@@ -187,6 +189,17 @@
 							</div>
 						</div>
 					</div>
+					
+					 <!-- Resume -->
+                    <div class="page-section" id="resume">
+						<div id="pdf">
+							<h4 class="widget-title">Resume <a href="pdf/resume.pdf" Title="Download" download><i class="fa fa-download"></i></a></h4> 
+							<object width="840" height="1070" type="application/pdf" data="pdf/resume.pdf?#zoom=100&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+								<p>PDF could not be viewed in your browser. If you are using an up-to-date browser and believe this is an error pleaase contact
+									me below so I can debug the issue.</p>
+							</object>
+						</div>
+					</div>
 
 					<!-- CONTACT -->
 					<div class="page-section" id="contact">
@@ -219,9 +232,9 @@
 					</div>
 				</div>
 			</div>	
-		</div>
+		</div> <!-- Main Content -->
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
         <script src="js/min/main.min.js"></script>
 
