@@ -41,7 +41,6 @@
                 <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                 <div class="main-navigation responsive-menu">
                     <ul class="navigation">
-                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
                         <li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
 						<li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
@@ -62,7 +61,6 @@
             </div> <!-- top-section -->
             <div class="main-navigation">
                 <ul class="navigation">
-                    <li><a href="#top"><i class="fa fa-home"></i>Welcome</a></li>
                     <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
 					<li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
                     <li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
@@ -82,14 +80,6 @@
         </div> <!-- .sidebar-menu -->
         
 
-        <div class="banner-bg" id="top">
-            <div class="banner-overlay"></div>
-            <div class="welcome-text">
-                <h2>Simple Design | Personal Portfolio</h2>
-                <h5>This is a mobile friendly layout with Bootstrap v3.3.1 framework. Maecenas eu ante at nunc posuere fringilla sit amet non dolor. Proin condimentum fermentum nunc.</h5>
-            </div>
-        </div>
-
         <!-- MAIN CONTENT -->
         <div class="main-content">
             <div class="fluid-container">
@@ -98,9 +88,9 @@
                     <div class="page-section" id="about">
 						<div class="row">
 							<div class="col-md-12">
-								<h4 class="widget-title">Learn About Me</h4>
+								<h4 class="widget-title">About Me</h4>
 								<div class="about-image">
-									<img src="img/8.jpg" alt="about me">
+									<img src="img/Lockheed_Martin.jpg" alt="about me">
 								</div>
 								<div>
 									<p>My name is Matthew Corless. I am a senior at Arizona State University studying a B.S. in software engineering. I am currently a part-time Software 
@@ -117,77 +107,86 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 class="widget-title">My Projects and Overall Experience</h4>
-								<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Maecenas et lorem molestie, maximus justo dignissim, cursus nisl. Nullam at ante quis ex pharetra pulvinar quis id dolor. Integer lorem odio, euismod ut sem sit amet, imperdiet condimentum diam.</p>
+								<p>Here are the projects that I have worked on indivually or collaboratively with other developers. I have links for source code on projects that are not intellectual property or covered
+									in a non-disclosure agreement.</p>
 							</div>
 						</div>
-						<div class="row projects-holder">
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/1.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-										</div>
-									</div>
-								</div>
+						<div class="projects">
+							<h3>Professional</h3>
+							<div class="project-item">
+								<h5>Automated Weight and Balance System</h5>
+								<p>AWBS has two websites: AWBS (U.S. Airforace, Navy, Army, and USCG) and CAWBS (U.S. ally countries). AWBS 11.0 is 
+									scheduled to be released in May 2018 featuring a Xamarin client for windows, android and iOS. I am the priamry 
+									developer for both of the ASP.NET websites and for the API being developed for AWBS 11. Since I am considered 
+									the "web guy" I am responsible for maintaining the SQL Server database, stress testing, and setting up the
+									test server for other developers to use as a data source since I am the only developer with SQL Server installed locally.</p>
+								<!-- <ul> -->
+									<!-- <li>Set-Up test </li> -->
+								<!-- </ul> -->
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/2.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-										</div>
-									</div>
-								</div>
+							<div class="project-item">
+								<h5>Viper Change Management Website</h5>
+								<p>As an intern I worked on the Viper Change management website.
+									<br />
+									Tasks I completed were:
+								</p>
+								<ul>
+									<li>Created in depth user guides for each VCM process (VCR, Airworthiness, FOSTR, CSI, Flight Forms)</li>
+									<li>Tested various changes by two senior developers before each VCM release.</li>
+									<li>Created a new user input for VCRs and an RDLC report that would display each VCR with 'yes' selected.</li>
+									<li>Created a new multi-view that would display a dropdown to users with specific roles to change the location of a VCR, therefore changing the VCR name. 
+										Users without the specific permissions would see the name of the VCR as a non-editable label.</li>
+								</ul>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/3.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus.</p>
-										</div>
-									</div>
-								</div>
+							<div class="project-item">
+								<h5>Engineering Drawing Tracker Website</h5>
+								<p>As an intern I primarily worked on the EDT website. EDT is a small internal website used in conjunction to Viper Change Management to keep track of drawings for 
+									Viper Change Requests. Before the website's intial development Lockheed engineers needed to track their hours worked for each drawing in spreadsheets. The website also 
+									enforces a strict process flow for each drawing type. The complex process flows allow engineers to challenge drawings assigned to them, reject a drawing to a previous 
+									state, and advance a drawing to the next state.
+									<br />
+									Tasks I completed were:
+								</p>
+								<ul>
+									<li>Release notes of user affecting changes edited to only show changes I made:
+										<a href="https://matthewcorless.me/pdf/EDT2016.pdf">2016</a>&nbsp;&nbsp;<a href="https://matthewcorless.me/pdf/EDT2017June.pdf">June_2017</a>&nbsp;&nbsp;
+										<a href="https://matthewcorless.me/pdf/EDT2017August.pdf">August_2017</a>				
+									</li>
+									<li>Worked various bugs and tasks on TFS including: generating Word, PDF, and Excel reports, adding new features such as bulk profile processing, and general bug-fixing.</li>
+									<ul>Examples of work:
+										<li>Added front-end and back-end logic to allow users to advance, challenge, and reject drawings assigned to them
+											in bulk instead of having to perform actions on each individual drawing. This utilized javascript for client side logic on which profiles could
+											be selected together, server side logic to perform the bulk processing (profile status change, bulk emailling, etc). I was able to multi-thread 
+											these processes so that it could operate 3-4 times faster (on my devolopment environment) but I switched teams before it was tested enough to be put in production.</li>
+										<li>Created History database table and supporting C# classes that would track every change a user made to a profile in one session 
+											and would save the changes in a compact JSON string. Created a webcontrol to display every change in a profile since its creation, 
+											the user that committed the change, and the date of the change</li>
+									</ul>
+								</ul>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/4.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-										</div>
-									</div>
-								</div>
+						</div> <!-- Professional -->
+						<div class="projects">
+							<h3>Personal</h3>
+							<div class="project-item">
+								<h5>Converter</h5>
+								<p>This application initially started as a simple assignment for a sophomore level class that required you to create a decimal-binary converter. I eventually built on this application
+									to include hexadecimal and octal. In order to add the show-me window to the app I decided to rewrite it in JavaFX in order to use CSS and HTML. Over time I built on this app more and
+									added maven, continuous integration, and unit testing.</p>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/5.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-										</div>
-									</div>
-								</div>
+							<div class="project-item">
+								<h5>matthewcorless.me</h5>
+								<p>This is a simple single page application (SPA) that I plan on building upon over time. I got the idea when I found out 'ME' domains are free for one year for students and that websites can
+									be hosted on github for free. Currently the website acts as a bloated resume but I hope to add to it more in the future.
+								</p>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="project-item">
-									<img src="img/6.jpg" alt="">
-									<div class="project-hover">
-										<div class="inside">
-											<h5><a href="#">Pellentesque porta ligula</a></h5>
-											<p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-										</div>
-									</div>
-								</div>
+							<div class="project-item">
+								<h5>SolarSPELL</h5>
+								<p>SolarSPELL is a Solar Powered Educational Learning Library. For my first capstone my group implemented software to extract data from the raspberry  pi digital libraries 
+									with an android device. The purpose of the project was to gain insight in which artifacts in the digital library were being used without interfering with the digital 
+									library functions. We developed an API for android devices to extract the usage information from the LAMP stack on the rasperry pi libraries.
+								</p>
 							</div>
-						</div>
+						</div> <!-- Professional -->
 					</div>
 					
 					 <!-- Resume -->
