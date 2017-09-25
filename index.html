@@ -1,58 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Internet Explorer comments -->
+<!--[if lt IE 7]>     	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        	<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>       	<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>		<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matthew Corless Portfolio Website</title>
+        <meta name="description" content="">
+        <!-- Orginal Template: Volton Template http://www.templatemo.com/tm-441-volton -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/profile.jpg" alt="Volton">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">Matthew Corless</h3>
+								<p class="profile-description">Welcome to my portfolio website!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
+						<li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-<body>
-    <h1>Welcome! Here are links to my professional experience:</h1>
-	<br/>
-    [Resumé](mjcorless.github.io/resume)
-    <a href="https://github.com/mjcorless" class="github-link">My Github Profile</a>
-	
-				
-		<div class="tbd">
-			<h3>Professional Experience</h3>
-				<ul>
-					<li>[EDT August 2016 Release](mjcorless.github.io/resources/pdf/EDT2016AugustRelease.pdf)</li>
-					<li>[EDT June 2017 Release](mjcorless.github.io/resources/pdf/EDT2017JuneRelease.pdf)</li>
-					<li><a href="#" onclick='showVCRDropDown();'>Unfortunately I did not get permission to show releases for VCM. However, here are some of the features I added:</a></li>
-					<ul ID="VCRDropDown" style="display:none">
-						<li>User guides for each of the VCM modules...</li>
-						<li>Multi-View html component that shows a location dropdown for users with specific roles to change the location property of a Viper Change Request's name.
-							Users without the role would just see an uneditable label that included the location in the VCR name.</li>
-						<li>Created radio button in VCR ViewEdit page. If the 'yes' button was selected then the VCR would showup in the corresponding RDLC report I made.</li>
-						<li>Admin tool that allows admins and users with specific roles to search for comments throughout the site. Tool allows the user to search with the comment's
-							date, commenter's name/email, and .... It also allows us to search for auto-generated and user type comments that were within x minutes of each other so that we
-							could find comments that were not standardized to the new comment format throughout the site.</li>
-					</ul>
-				</ul>
-		</div>
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Matthew Corless">
+                </div>
+                <h3 class="profile-title">Matthew Corless</h3>
+                <p class="profile-description">Welcome to my portfolio website!</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+					<li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
+                    <li><a href="#resume"><i class="fa fa-male"></i>My Resume</a></li>
+                    <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <!-- <div class="social-icons"> -->
+                <!-- <ul> -->
+                    <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                <!-- </ul> -->
+            <!-- </div> <!-- .social-icons --> 
+        </div> <!-- .sidebar-menu -->
+        
 
-		<div class="tbd">
-			<h3>Personal Projects</h3>
-				<h4><a href="https://github.com/mjcorless/Converter" class="project-link">Converter</a></h3>
-					<ul>
-						<li>Converter that takes the user's input and dynamically converts it to Decimal, Binary, Hexadecimal, and Octal.</li>
-						<li>Has a ShowMe! button that will then display each invidual conversion in HTML in a new window.</li>
-						<li>Languages/Frameworks: Java, CSS, HTML, Maven, Travis Continuous Integration, JavaFX, JUnit Testing</li>
-					</ul>
-				<h4><a href="https://github.com/mjcorless/Converter_Mobile" class="project-link">Converter_Mobile</a></h3>
-					<ul>
-						<li>Non-existant xamarin implementation of Converter app </li>
-					</ul>
-				<h4><a href="mjcorless.github.io" class="project-link">This Website</a></h3>
-                    <ul>
-						<li>Personal Portfolio website that includes links to various work I have done.</li>
-						<li>Languages/Frameworks: HTML, CSS, Javascript, markdown</li>
-					</ul>
-		</div>	
-</body>
-<script>
-	function showVCRDropDown()
-	{
-		document.getElementById("VCRDropDown").style.display = 'block';
-		
-	}
-</script>
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+                <div class="content-wrapper">
+                    <!-- ABOUT -->
+                    <div class="page-section" id="about">
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">About Me</h4>
+								<div class="about-image">
+									<img src="img/Lockheed_Martin.jpg" alt="about me">
+								</div>
+								<div>
+									<p>My name is Matthew Corless. I am a senior at Arizona State University studying a B.S. in software engineering. I am currently a part-time Software 
+										Engineer ASC for Lockheed Martin. I interned for them for two consecutive summers before being brought on as a part-time hire (30-40 hr/wk) while I finish my degree.
+									</p>
+								</div>
+								<hr>
+							</div>
+						</div> <!-- #about -->
+                    </div>
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">My Projects and Overall Experience</h4>
+								<p>Here are the projects that I have worked on indivually or collaboratively with other developers. I have links for source code on projects that are not intellectual property or covered
+									in a non-disclosure agreement.</p>
+							</div>
+						</div>
+						<div class="projects">
+							<h3>Professional</h3>
+							<div class="project-item">
+								<h5>Automated Weight and Balance System</h5>
+								<p>AWBS has two websites: AWBS (U.S. Airforace, Navy, Army, and USCG) and CAWBS (U.S. ally countries). AWBS 11.0 is 
+									scheduled to be released in May 2018 featuring a Xamarin client for windows, android and iOS. I am the priamry 
+									developer for both of the ASP.NET websites and for the API being developed for AWBS 11. Since I am considered 
+									the "web guy" I am responsible for maintaining the SQL Server database, stress testing, and setting up the
+									test server for other developers to use as a data source since I am the only developer with SQL Server installed locally.</p>
+								<!-- <ul> -->
+									<!-- <li>Set-Up test </li> -->
+								<!-- </ul> -->
+							</div>
+							<div class="project-item">
+								<h5>Viper Change Management Website</h5>
+								<p>As an intern I worked on the Viper Change management website.
+									<br />
+									Tasks I completed were:
+								</p>
+								<ul>
+									<li>Created in depth user guides for each VCM process (VCR, Airworthiness, FOSTR, CSI, Flight Forms)</li>
+									<li>Tested various changes by two senior developers before each VCM release.</li>
+									<li>Created a new user input for VCRs and an RDLC report that would display each VCR with 'yes' selected.</li>
+									<li>Created a new multi-view that would display a dropdown to users with specific roles to change the location of a VCR, therefore changing the VCR name. 
+										Users without the specific permissions would see the name of the VCR as a non-editable label.</li>
+								</ul>
+							</div>
+							<div class="project-item">
+								<h5>Engineering Drawing Tracker Website</h5>
+								<p>As an intern I primarily worked on the EDT website. EDT is a small internal website used in conjunction to Viper Change Management to keep track of drawings for 
+									Viper Change Requests. Before the website's intial development Lockheed engineers needed to track their hours worked for each drawing in spreadsheets. The website also 
+									enforces a strict process flow for each drawing type. The complex process flows allow engineers to challenge drawings assigned to them, reject a drawing to a previous 
+									state, and advance a drawing to the next state.
+									<br />
+									Tasks I completed were:
+								</p>
+								<ul>
+									<li>Release notes of user affecting changes edited to only show changes I made:
+										<a href="https://matthewcorless.me/pdf/EDT2016.pdf">2016</a>&nbsp;&nbsp;<a href="https://matthewcorless.me/pdf/EDT2017June.pdf">June_2017</a>&nbsp;&nbsp;
+										<a href="https://matthewcorless.me/pdf/EDT2017August.pdf">August_2017</a>				
+									</li>
+									<li>Worked various bugs and tasks on TFS including: generating Word, PDF, and Excel reports, adding new features such as bulk profile processing, and general bug-fixing.</li>
+									<ul>Examples of work:
+										<li>Added front-end and back-end logic to allow users to advance, challenge, and reject drawings assigned to them
+											in bulk instead of having to perform actions on each individual drawing. This utilized javascript for client side logic on which profiles could
+											be selected together, server side logic to perform the bulk processing (profile status change, bulk emailling, etc). I was able to multi-thread 
+											these processes so that it could operate 3-4 times faster (on my devolopment environment) but I switched teams before it was tested enough to be put in production.</li>
+										<li>Created History database table and supporting C# classes that would track every change a user made to a profile in one session 
+											and would save the changes in a compact JSON string. Created a webcontrol to display every change in a profile since its creation, 
+											the user that committed the change, and the date of the change</li>
+									</ul>
+								</ul>
+							</div>
+						</div> <!-- Professional -->
+						<div class="projects">
+							<h3>Personal</h3>
+							<div class="project-item">
+								<h5>Converter</h5>
+								<p>This application initially started as a simple assignment for a sophomore level class that required you to create a decimal-binary converter. I eventually built on this application
+									to include hexadecimal and octal. In order to add the show-me window to the app I decided to rewrite it in JavaFX in order to use CSS and HTML. Over time I built on this app more and
+									added maven, continuous integration, and unit testing.</p>
+							</div>
+							<div class="project-item">
+								<h5>matthewcorless.me</h5>
+								<p>This is a simple single page application (SPA) that I plan on building upon over time. I got the idea when I found out 'ME' domains are free for one year for students and that websites can
+									be hosted on github for free. Currently the website acts as a bloated resume but I hope to add to it more in the future.
+								</p>
+							</div>
+							<div class="project-item">
+								<h5>SolarSPELL</h5>
+								<p>SolarSPELL is a Solar Powered Educational Learning Library. For my first capstone my group implemented software to extract data from the raspberry  pi digital libraries 
+									with an android device. The purpose of the project was to gain insight in which artifacts in the digital library were being used without interfering with the digital 
+									library functions. We developed an API for android devices to extract the usage information from the LAMP stack on the rasperry pi libraries.
+								</p>
+							</div>
+						</div> <!-- Professional -->
+					</div>
+					
+					 <!-- Resume -->
+                    <div class="page-section" id="resume">
+						<div id="pdf">
+							<h4 class="widget-title">Resume <a href="pdf/resume.pdf" Title="Download" download><i class="fa fa-download"></i></a></h4> 
+							<object width="840" height="1070" type="application/pdf" data="pdf/resume.pdf?#zoom=100&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+								<p>PDF could not be viewed in your browser. If you are using an up-to-date browser and believe this is an error pleaase contact
+									me below so I can debug the issue.</p>
+							</object>
+						</div>
+					</div>
+
+					<!-- CONTACT -->
+					<div class="page-section" id="contact">
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">Contact Me</h4>
+								<p>Feel free to contact me via phone or email.</p>
+							</div>
+						</div>
+						<div class="row">
+							<form action="mailto:mjcorless@asu.edu" method="post" class="contact-form">
+								<fieldset class="col-md-4 col-sm-6">
+									<input type="text" id="your-name" placeholder="Name">
+								</fieldset>
+								<fieldset class="col-md-4 col-sm-6">
+									<input type="email" id="email" placeholder="Email">
+								</fieldset>
+								<fieldset class="col-md-4 col-sm-12">
+									<input type="text" id="your-subject" placeholder="Subject">
+								</fieldset>
+								<fieldset class="col-md-12 col-sm-12">
+									<textarea name="message" id="message" cols="30" rows="6" placeholder="Message body"></textarea>
+								</fieldset>
+								<fieldset class="col-md-12 col-sm-12">
+									<input type="submit" class="button big default" value="Send Message">
+									<input type="reset" class="button big cancel" value="Clear">
+								</fieldset>
+							</form>
+						</div> <!-- .contact-form -->
+					</div>
+				</div>
+			</div>	
+		</div> <!-- Main Content -->
+
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
 </html>
-
-
-
