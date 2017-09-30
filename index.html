@@ -93,8 +93,9 @@
 									<img src="img/Lockheed_Martin.jpg" alt="about me">
 								</div>
 								<div>
-									<p>My name is Matthew Corless. I am a senior at Arizona State University studying a B.S. in Software Engineering. I am currently a part-time employee for Lockheed Martin. 
-									I interned for them for two consecutive summers before being brought on as a part-time hire (30-40 hr/wk) while I finish my degree.
+									<p>My name is Matthew Corless. I am a senior at Arizona State University studying for a B.S. in Software Engineering. I am currently work for Lockheed Martin. 
+									I interned for them for two consecutive summers before being brought on as a part-time hire (30-40 hr/wk) while I finish my degree. I have agreed to work for Lockheed
+									through April 2018 in order to help develop AWBS 11.0 which is scheduled to release May 2018.
 									</p>
 								</div>
 								<hr>
@@ -107,30 +108,31 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 class="widget-title">My Projects and Overall Experience</h4>
-								<p>Here are the projects that I have worked on indivually or collaboratively with other developers. I have links for source code on projects that are not intellectual property or covered
-									in a non-disclosure agreement.</p>
+								<p>Here are the projects that I have worked on individually  or collaboratively with other developers. I have links for source code on projects that are not 						
+								intellectual property or covered in a non-disclosure agreement.</p>
 							</div>
 						</div>
 						<div class="projects">
 							<h3>Professional</h3>
 							<div class="project-item">
 								<h5>Automated Weight and Balance System</h5>
-								<p>AWBS has two websites: AWBS (U.S. Airforace, Navy, Army, and USCG) and CAWBS (U.S. ally countries). AWBS 11.0 is 
-									scheduled to be released in May 2018 featuring a Xamarin client for windows, android and iOS. I am the primary 
-									developer for both of the ASP.NET websites and for the API being developed for AWBS 11. Since I am considered 
-									the "web guy" I am responsible for maintaining the SQL Server database, stress testing, creating and testing all HTTP API requests/controls, and setting up the
-									test server for other developers to use as a data source since I am the only developer with SQL Server installed locally.</p>
-								<!-- <ul> -->
-									<!-- <li>Set-Up test </li> -->
-								<!-- </ul> -->
+								<p>AWBS software is used throughout the world to calculate weight and moment, determining operational limits of an aircraft, and estimating landing conditions of an aircraft.
+									AWBS has two websites: AWBS (Department of Defense) and CAWBS (foreign countries). AWBS 11.0 is scheduled to be released in May 2018 featuring a Xamarin app for windows, 
+									android and iOS. 
+								<ul>My responsibilities include:
+									<li>Primary developer for both of the ASP.NET websites. I am responsible for the full development cycle of both websites including planning, design, 
+										implmentation, deployment, and maintenance.</li>
+									<li>Primary developer for API being developed for AWBS 11.</li>
+									<li>Creating and maintaining the server database (SQL Server) throughout development as the client schema changes.</li>
+									<li>Creating and testing all HTTP API requests/controls. I also stress test them and refactor them where needed to make them as efficient as possible</li>
+								</ul>	
 							</div>
 							<div class="project-item">
 								<h5>Viper Change Management Website</h5>
-								<p>As an intern I worked on the Viper Change management website.
-									<br />
-									Tasks I completed were:
+								<p>As an intern I worked on the Viper Change Management (VCM) website. VCM started as a website repository for all f-16 change requests in the world. It has expanded through the
+									years to store other repositories related to f-16 and other aircraft.
 								</p>
-								<ul>
+								<ul>Tasks I completed were:
 									<li>Created in depth user guides for each VCM process (VCR, Airworthiness, FOSTR, CSI, Flight Forms)</li>
 									<li>Tested various changes by two senior developers before each VCM release.</li>
 									<li>Created a new user input for VCRs and an RDLC report that would display each VCR with 'yes' selected.</li>
@@ -140,27 +142,25 @@
 							</div>
 							<div class="project-item">
 								<h5>Engineering Drawing Tracker Website</h5>
-								<p>As an intern I primarily worked on the EDT website. EDT is a small internal website used in conjunction to Viper Change Management to keep track of drawings for 
-									Viper Change Requests. Before the website's intial development Lockheed engineers needed to track their hours worked for each drawing in spreadsheets. The website also 
+								<p>As an intern I primarily worked on the EDT website. EDT is a small internal website used in conjunction to VCM to keep track of drawings for 
+									Viper Change Requests. Before the website Lockheed engineers needed to track their hours worked and overall status for each drawing in spreadsheets. The website also 
 									enforces a strict process flow for each drawing type. The complex process flows allow engineers to challenge drawings assigned to them, reject a drawing to a previous 
-									state, and advance a drawing to the next state.
-									<br />
-									Tasks I completed were:
+									state, and advance a drawing to the next state. Gatekeepers, or users with a manager role, can assign, recall, cancel, and put drawings on-hold.
 								</p>
-								<ul>
+								<ul>Tasks I completed were:
 									<li>Release notes of user affecting changes edited to only show changes I made:
 										<a href="https://matthewcorless.me/pdf/EDT2016.pdf">2016</a>&nbsp;&nbsp;<a href="https://matthewcorless.me/pdf/EDT2017June.pdf">June_2017</a>&nbsp;&nbsp;
 										<a href="https://matthewcorless.me/pdf/EDT2017August.pdf">August_2017</a>				
 									</li>
-									<li>Worked various bugs and tasks on TFS including: generating Word, PDF, and Excel reports, adding new features such as bulk profile processing, and general bug-fixing.</li>
+									<li>Worked various bugs and tasks on TFS including: fixing hour tracking throughout the site, generating Word, PDF, and Excel reports, and adding new features such as bulk profile processing.</li>
 									<ul>Examples of work:
 										<li>Added front-end and back-end logic to allow users to advance, challenge, and reject drawings assigned to them
-											in bulk instead of having to perform actions on each individual drawing. This utilized javascript for client side logic on which profiles could
-											be selected together, server side logic to perform the bulk processing (profile status change, bulk emailling, etc). I was able to multi-thread 
-											these processes so that it could operate 3-4 times faster (on my devolopment environment) but I switched teams before it was tested enough to be put in production.</li>
+											in bulk instead of having to perform actions on each individual drawing. This utilized JavaScript for client-side logic on which profiles could
+											be selected together, server-side logic to perform the bulk processing (profile status change, bulk emailling, etc). I was able to multi-thread 
+											these processes so that it could operate 3-4 times faster (on my development environment) but I switched teams before it was tested enough to be put in production.</li>
 										<li>Created History database table and supporting C# classes that would track every change a user made to a profile in one session 
-											and would save the changes in a compact JSON string. Created a webcontrol to display every change in a profile since its creation, 
-											the user that committed the change, and the date of the change</li>
+											and would save the changes in a compact JSON string. Created a web control to display every change in a profile since its creation, 
+											the user that committed the change, and the date of the change.</li>
 									</ul>
 								</ul>
 							</div>
@@ -170,21 +170,21 @@
 							<div class="project-item">
 								<h5>Converter</h5>
 								<p>This application initially started as a simple assignment for a sophomore level class that required you to create a decimal-binary converter. I eventually built on this application
-									to include hexadecimal and octal. In order to add the show-me window to the app I decided to rewrite it in JavaFX in order to use CSS and HTML. Over time I built on this app more and
+									to include hexadecimal and octal. To add the show-me window to the app I decided to rewrite it in JavaFX in order to use CSS and HTML. Over time I built on this app more and
 									added maven, continuous integration, and unit testing.</p>
 							</div>
 							<div class="project-item">
 								<h5>matthewcorless.me</h5>
 								<p>This is a simple single page application (SPA) that I plan on building upon over time. I got the idea when I found out 'ME' domains are free for one year for students and that websites can
-									be hosted on github for free. Currently the website acts as a bloated resume but I hope to add to it more in the future.
+									be hosted on GitHub for free. Currently the website acts as a bloated resume but I hope to add to it more in the future.
 								</p>
 							</div>
 							<div class="project-item">
 								<h5>SolarSPELL</h5>
-								<p>SolarSPELL is a Solar Powered Educational Learning Library. This is my first capston and is a semester long project for the Fall 2017 semester. My group is tasked to 
+								<p>SolarSPELL is a Solar Powered Educational Learning Library. This is my first capstone and is a semester long project for the Fall 2017 semester. My group is tasked to 
 									create software to extract data from the raspberry pi digital libraries with an android device. The purpose of the project is to gain insight in which artifacts in 
 									the digital library are being used without interfering with the digital library functions. We plan to develop an API for android devices to extract the usage 
-									information from the LAMP stack on the rasperry pi devices.
+									information from the LAMP stack on the raspberry pi devices.
 								</p>
 							</div>
 						</div> <!-- Professional -->
