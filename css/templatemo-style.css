@@ -327,6 +327,10 @@ h3.profile-title {
   margin-right: 15px;
   font-size: 24px;
 }
+.main-navigation a i {
+  margin-right: 15px;
+  font-size: 24px;
+}
 .main-navigation li a:hover {
   background: #5b6878;
 }
@@ -336,6 +340,17 @@ h3.profile-title {
 .main-navigation li a.active:hover {
   background: #495461;
 }
+.gitHub {
+  padding: 15px 40px;
+  display: block;
+  color: white;
+  margin-right: 15px;
+  font-size: 14px;
+}
+.gitHub a:hover {
+  background: #5b6878;
+}
+
 
 .social-icons {
   display: block;
