@@ -9,7 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Matthew Corless Portfolio Website</title>
         <meta name="description" content="">
-        <!-- Orginal Template: Volton Template http://www.templatemo.com/tm-441-volton -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="css/normalize.css">
@@ -29,11 +28,13 @@
                     <div class="col-md-12">
                         <div class="top-section">
                             <div class="profile-image">
-                                <img src="img/profile.jpg" alt="Volton">
+                                <img src="img/profile.jpg" alt="Me">
                             </div>
                             <div class="profile-content">
                                 <h3 class="profile-title">Matthew Corless</h3>
 								<p class="profile-description">Welcome to my portfolio website!</p>
+								<br/>
+								<p>(630)303-2080 | mjcorless@asu.edu</p>
                             </div>
                         </div>
                     </div>
@@ -42,12 +43,15 @@
                 <div class="main-navigation responsive-menu">
                     <ul class="navigation">
                         <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-                        <li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
+						<li><a href="#professional"><i class="fa fa-briefcase"></i>Professional Work</a></li>
+                        <li><a href="#projects"><i class="fa fa-calculator"></i>My Projects</a></li>
 						<li><a href="#resume"><i class="fa fa-address-card"></i>My Resume</a></li>
                         <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                     </ul>
+					<!-- TODO: fix the navigation CSS and javascript so it doesn't break actual links in the list.
+					 		Right now I am using a li outside of the ul in order to maintain the same style-->
+					<li><a class="gitHub" href="https://github.com/mjcorless" target="_blank"><i class="fa fa-github-alt"></i>GitHub</a></li>
                 </div>
-				<a href="https://github.com/mjcorless" class="asdf" ><i class="fa fa-github-alt"></i>GitHub</a>
             </div>
         </div>
 
@@ -59,15 +63,18 @@
                 </div>
                 <h3 class="profile-title">Matthew Corless</h3>
                 <p class="profile-description">Welcome to my portfolio website!</p>
+				<br/>
+				<p>(630)303-2080 | mjcorless@asu.edu</p>
             </div> <!-- top-section -->
             <div class="main-navigation">
                 <ul class="navigation">
                     <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-					<li><a href="#projects"><i class="fa fa-briefcase"></i>My Projects</a></li>
+					<li><a href="#professional"><i class="fa fa-briefcase"></i>Professional Work</a></li>
+					<li><a href="#projects"><i class="fa fa-calculator"></i>My Projects</a></li>
                     <li><a href="#resume"><i class="fa fa-address-card"></i>My Resume</a></li>
                     <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
                 </ul>
-				<a class="gitHub" href="https://github.com/mjcorless"><i class="fa fa-github-alt"></i>GitHub</a>
+				<li><a class="gitHub" href="https://github.com/mjcorless" target="_blank"><i class="fa fa-github-alt"></i>GitHub</a></li>
             </div><!-- .main-navigation -->
             <!-- <div class="social-icons"> -->
                 <!-- <ul> -->
@@ -91,45 +98,93 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h4 class="widget-title">About Me</h4>
-								<div class="about-image">
-									<img src="img/Lockheed_Martin.jpg" alt="about me">
-								</div>
 								<div>
 									<p>My name is Matthew Corless. I am a senior at Arizona State University studying for a B.S. in Software Engineering. I am currently working for Lockheed Martin. 
-									I interned for them for two consecutive summers before transitioning to a junior developer role while I finish my degree. I work on Lockheed's Automated Weight & Balance System.
-									The am the sole full-stack developer for both of the AWBS websites and the primary developer for the AWBS web API currently in development.
+										I interned Lockheed Martin for 4 months in the summer of 2016. I initially started a co-op with them for the summer of 2017 but this turned into a full-time
+										employment when my manager realized I could do my last semester online. I currently work on Lockheed's Automated Weight & Balance System. Every aircraft in the Department
+										of Defense uses our AWBS software in order to generate flight forms for every mission. The AWBS team consists of ten developers utilizing agile and scrum.
+										Our primary project is a Xamarin client that will be released June 2018.
 									</p>
+									<br>
+									<ul style="list-style-type: square">My responsibilities on my current team include:
+										<li>Primary developer for both of our ASP.NET websites. I am responsible for the full development cycle of both websites including planning, design,
+											implmentation, deployment, and maintenance. <small><a href="https://cs.lmaeronautics.com">cs.lmaeronautics.com</a> (foreign customers) and
+												<a href="https://awbs.hill.af.mil">https://awbs.hill.af.mil</a> (DoD site, CAC required)</small></li>
+										<li>Primary developer for RESTful API being developed for our Xamarin application. This is the first REST API for LM Aeronautics and I work
+											closely with Fort Worth network engineers to establish secure web services.</li>
+										<li>Creating and maintaining the server database (SQL Server) throughout development as the client schema changes.</li>
+										<li>Setting up various servers for us to use for internal testing and for Beta tests with sanitized data. This includes setting up Windows Server, SQL Server, and IIS)</li>
 								</div>
 								<hr>
 							</div>
 						</div> <!-- #about -->
                     </div>
                     
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
+                    <!-- Professional -->
+                    <div class="page-section" id="professional">
 						<div class="row">
 							<div class="col-md-12">
-								<h4 class="widget-title">My Projects and Overall Experience</h4>
-								<p>Here are the projects that I have worked on individually  or collaboratively with other developers. I have links for source code on projects that are not 						
-								intellectual property or covered in a non-disclosure agreement.</p>
+								<h4 class="widget-title">Professional Projects</h4>
+								<p>Here are the projects that I have worked on individually or collaboratively with other developers.</p>
+								<img src="img/Lockheed_Martin.jpg" width="90%" alt="Lockheed Logo">
 							</div>
 						</div>
 						<div class="projects">
-							<h3>Professional</h3>
+							<h5>Current AWBS Team (August 2017 - )</h5>
 							<div class="project-item">
-								<h5>Automated Weight and Balance System</h5>
-								<p>AWBS software is used throughout the world to calculate weight, moment, operational limits of an aircraft, and estimating landing conditions of an aircraft.
-									AWBS has two websites: AWBS (Department of Defense) and CAWBS (foreign countries). AWBS 11.0 is scheduled to be released in May 2018 featuring a Xamarin app for windows, 
-									android, and iOS.
-								<ul>My responsibilities include:
-									<li>Primary developer for both of the ASP.NET websites. I am responsible for the full development cycle of both websites including planning, design, 
-										implmentation, deployment, and maintenance. Both of these websites use ASP.NET Web Forms.</li>
-									<li>Primary developer for API being developed for AWBS 11.</li>
-									<li>Creating and maintaining the server database (SQL Server) throughout development as the client schema changes.</li>
-									<li>Creating and testing all HTTP API requests/controls. I also stress test them and refactor them where needed to make them as efficient as possible</li>
-								</ul>	
+								<h5>REST API</h5>
+								<p>When I joined the team the API was a simple prototype using SQLite for the databases. I took the prototype to a finished product. This involved updating
+								the entire project to use SQL Server, updating the schema, redoing the authentication, handling error codes, writing new API calls as needed, and working with
+								Lockheed network engineers to make the REST API secure. Since this is the first LM Aeronautics REST API I have needed to work closely with them so we can
+								make the services secure enough for Lockheed Martin standards (schema validation, two-factor authentication, etc.)
 							</div>
 							<div class="project-item">
+								<h5><a href="https://cs.lmaeronautics.com">cs.lmaeronautics.com</a></h5>
+								<p>This website is a public facing site meant for our foreign customers.
+								</p>
+								<ul>Tasks I completed were:
+									<li>Added functionality to upload and download software.</li>
+									<li>Created a system to allow users to download software based on their need and the currently valid agreements with their country.
+									This allowed us stop relying on an external site and allowed us to host our own software on our site. This change directly led to
+									more users and opened doors to contracts with more foreign countries.</li>
+									<li>Added functionality for Fort Worth engineers to create and upload modifications. These modifications are primarily used for F-35s and
+									adjust the aircraft's weight and balance record in the database based on the type of modification.</li>
+								</ul>
+							</div>
+							<div class="project-item">
+								<h5><a href="https://awbs.hill.af.mil">awbs.hill.af.mil</a></h5>
+								<p>This site is for our Department of Defense users. It acts as a central repository for software products and user permissions for our
+									web services. I primarily maintain the website and only work on it if something breaks if there is a high priority task. Most of my
+									additions to this site are in preparation of our new AWBS client coming out this summer.
+								</p>
+								<ul>Tasks I completed were:
+									<li>Updated authentication with CAC cards after the DoD created a new edge server that broke our old authentication.</li>
+									<li>Added functionality for Fort Worth engineers to create and upload modifications. These modifications are primarily used for F-35s and
+										adjust the aircraft's weight and balance record in the database based on the type of modification.</li>
+								</ul>
+							</div>
+							<div class="project-item">
+								<h5>SOAP Web Services (for both sites listed above)</h5>
+								<p>These are our legacy web services that have been used for the past 10 years. I don't work on them unless something breaks breaks for one
+									of the sites.
+								</p>
+								<ul>Bugs I fixed were:
+									<li>Fixed a race-condition bug that was causing power users to lose permissions. This bug existed for over two years and led to countless headaches
+									that multiple developers could not figure out.</li>
+									<li>Added functionality to ensure users with permissions for multiple countries do not accidentally upload an aircraft to the wrong country.</li>
+									<li>Updated authentication for the DoD web services after the DoD created a new edge server that broke our old authentication.</li>
+								</ul>
+							</div>
+							<div class="project-item">
+								<h5>Xamarin client</h5>
+								<p>I have not worked on the client as much as I would like to. Most of my work in the client is code reviewing others (we require two code reviews
+									for each check-in). Something I did do was create a logging feature to log any unhandled exceptions and non-200 API responses. I added an API
+									call to sync these JSON logs with the server so we can look at issues the users are having. A future update will likely have a log viewer for
+									the the user to contact our support line with.
+								</p>
+							</div>
+							<div class="project-item">
+								<h5>Past Projects as an intern (May 2016 - August 2016 and May 2017 - August 2017)</h5>
 								<h5>Viper Change Management Website</h5>
 								<p>As an intern I worked on the Viper Change Management (VCM) website. VCM started as a website repository for all f-16 change requests in the world. It has expanded through the
 									years to store other repositories related to f-16 and other aircraft.
@@ -166,32 +221,37 @@
 									</ul>
 								</ul>
 							</div>
-						</div> <!-- Professional -->
+						</div>
+					</div>
+
+					<!-- Personal Projects -->
+					<div class="page-section" id="projects">
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">My Projects and Overall Experience</h4>
+								<p>Here are the projects that I have worked on individually  or collaboratively with other developers. I have links for source code on projects that are not
+									intellectual property or covered in a non-disclosure agreement.</p>
+							</div>
+						</div>
 						<div class="projects">
 							<h3>Personal</h3>
 							<div class="project-item">
 								<h5>Converter</h5>
-								<p>This application initially started as a simple assignment for a sophomore level class that required you to create a decimal-binary converter. I eventually built on this application
-									to include hexadecimal and octal. To add the show-me window to the app I decided to rewrite it in JavaFX in order to use CSS and HTML. Over time I built on this app more and
-									added maven, continuous integration, and unit testing.</p>
+								<p>This application is "another converter app" that converts between decimal, binary, hexadecimal, and octal. However, this app also shows the user how
+									to do each conversion. The repository was set-up for continuous integration with Travis CI and Maven. Over winter break (2017-2018) I started to
+									build an android version of this with more functionality. The android portion is still a work in progress and likely will not be finished until the
+									summer of 2018 when I will have more time to work on personal projects.</p>
 							</div>
 							<div class="project-item">
 								<h5>matthewcorless.me</h5>
-								<p>This is a simple single page application (SPA) that I plan on building upon over time. I got the idea when I found out 'ME' domains are free for one year for students and that websites can
-									be hosted on GitHub for free. Currently the website acts as a bloated resume but I hope to add to it more in the future.
+								<p>This is the simple single page application (SPA) you are currently viewing. The website uses HTML, CSS, and JavaScript. I plan on building upon over
+									time. I got the idea when I found out 'ME' domains are free for one year for students and that websites can be hosted on GitHub for free.
+									Currently the website acts as a bloated resume but I hope to add to it more in the future.
 								</p>
 							</div>
-							<div class="project-item">
-								<h5>SolarSPELL</h5>
-								<p>SolarSPELL is a Solar Powered Educational Learning Library. This is my first capstone and is a semester long project for the Fall 2017 semester. My group is tasked to 
-									create software to extract data from the raspberry pi digital libraries with an android device. The purpose of the project is to gain insight in which artifacts in 
-									the digital library are being used without interfering with the digital library functions. We plan to develop an API for android devices to extract the usage 
-									information from the LAMP stack on the raspberry pi devices.
-								</p>
-							</div>
-						</div> <!-- Professional -->
+						</div>
 					</div>
-					
+
 					 <!-- Resume -->
                     <div class="page-section" id="resume">
 						<div id="pdf">
